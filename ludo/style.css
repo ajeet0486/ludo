@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 .ludo-container{
-   width: 85vmin;
+   width: 95vmin;
    margin: 20px auto;
 }
 .ludo{
     background-image: url('./ludo.jpg');
     width: 100%;
-    height: 85vmin;
+    height: 95vmin;
     background-size: contain;
     position: relative;
 }
@@ -64,5 +64,28 @@
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+.player-base{
+    width:40%;
+    height: 40%;
+    border:6.6vmin solid;
+    position: absolute;
+}
+.player-bases [player-id="P1"].player-base{
+    bottom:0;
+    left:0;
+    border-color: #2eafff;
+}
+.player-bases [player-id="P2"].player-base{
+    top:0;
+    right:0;
+}
+.player-base.highlight{
+    animation: border-blink .7s infinite ease-in-out;
+}
+@keyframes border-blink{
+    50%{
+        border-color: rgba(255,255,2550, 0.8);
     }
 }
