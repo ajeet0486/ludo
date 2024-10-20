@@ -1,4 +1,8 @@
 const diceButtonElement=document.querySelector('.roll');
+const playerPiecesElements={
+    P1:document.querySelectorAll('') ////////////////////////
+}
+
 
 export class UI{
     static listenDiceClick(callback){
